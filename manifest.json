@@ -1,0 +1,48 @@
+{
+  "dxt_version": "0.1",
+  "name": "osascript",
+  "version": "0.0.1",
+  "description": "Execute osascript to automate tasks on macOS.",
+  "author": {
+    "name": "Kenneth Lien",
+    "url": "https://kennethlien.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k6l3/osascript-dxt"
+  },
+  "homepage": "https://github.com/k6l3/osascript-dxt",
+  "documentation": "https://github.com/k6l3/osascript-dxt",
+  "support": "https://github.com/k6l3/osascript-dxt/issues",
+  "icon": "icon.png",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npx @anthropic-ai/dxt pack"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "osascript",
+      "description": "Execute `osascript -e <script>`"
+    }
+  ],
+  "keywords": [
+    "mcp",
+    "applescript",
+    "osascript"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0"
+  },
+  "license": "MIT"
+}

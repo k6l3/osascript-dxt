@@ -1,0 +1,12 @@
+{
+  "name": "osascript",
+  "version": "0.0.1",
+  "description": "Execute osascript",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0"
+  }
+}
