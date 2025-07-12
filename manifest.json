@@ -1,8 +1,9 @@
 {
   "dxt_version": "0.1",
-  "name": "osascript",
+  "name": "Control your Mac",
   "version": "0.0.1",
-  "description": "Execute osascript to automate tasks on macOS.",
+  "description": "Execute AppleScript to automate tasks on macOS.",
+  "long_description": "This tool allows you to execute AppleScript commands using `osascript`, enabling automation of tasks on macOS systems. Try asking Claude to do things on your Mac, like controlling applications or changing system settings.",
   "author": {
     "name": "Kenneth Lien",
     "url": "https://kennethlien.com"
